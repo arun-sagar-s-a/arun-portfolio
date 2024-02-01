@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   box-sizing: border-box;
 }
 body {
@@ -125,9 +125,9 @@ section {
   min-height: fit-content;
 }
 
-.section__container {
+/* .section__container {
   display: flex;
-}
+} */
 
 #profile {
   display: flex;
@@ -139,11 +139,18 @@ section {
 .section__pic-continer {
   display: flex;
   height: 400px;
-  width: 600px;
+  width: 400px;
+  /* bring the image to the center */
+  margin: auto 0;
+  border-radius: 50%;
 }
 .section__pic-continer img {
+  border-radius: 50%;
+}
+
+/* .section__pic-continer img {
   border-top-right-radius: 25%;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 25%;
-}
+} */
