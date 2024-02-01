@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script src="index.js" async></script>
+  </head>
+  <body>
+    <!--  First include a nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Aruuun</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Aruuun</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div>
+          <ul class="menu-links">
+            <li><a href="#About" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-continer">
+        <img src="./assets/profile-pic.jpg" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1>Arun Sagar S A</h1>
+        <p class="section__text__p2">Passionate Developer</p>
+      </div>
+      <div class="btn__container">
+        <button
+          onclick="window.open('./assets/Resume-ArunSagarSA.pdf','_blank')"
+          class="btn btn-color-2"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#Contact'">
+          Contact Me
+        </button>
+      </div>
+      <div class="socials__container">
+        <img
+          class="icon"
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          target="_blank"
+          onclick="window.open('https://www.google.co.in/','_blank')"
+        />
+        <img
+          class="icon"
+          src="./assets/github.png"
+          alt="My Github profile"
+          target="_blank"
+          onclick="window.open('https://www.google.co.in/','_blank')"
+        />
+      </div>
+    </section>
+  </body>
+</html>
