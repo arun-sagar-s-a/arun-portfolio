@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
 }
 body {
@@ -121,7 +121,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 5rem;
   min-height: fit-content;
 }
 
@@ -132,7 +132,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   height: 80vh;
 }
 
@@ -140,17 +140,100 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
-  /* bring the image to the center */
+  /* bring the image to the vertical center */
   margin: auto 0;
+  /* align-self: center; */
   border-radius: 50%;
 }
 .section__pic-continer img {
   border-radius: 50%;
 }
 
-/* .section__pic-continer img {
-  border-top-right-radius: 25%;
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 25%;
-} */
+.section__text {
+  /* make only text section come to center */
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.section__text .title {
+  font-size: 3rem;
+}
+
+.socials__container,
+.btn__container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+}
+.btn {
+  padding: 0.85rem 1.25rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-color-1 {
+  background-color: white;
+}
+.btn-color-1:hover {
+  background-color: black;
+  color: #5ca239;
+}
+
+/* Contact Me */
+.btn-color-2 {
+  background-color: #ffb534;
+  border-color: #ffb534;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s linear;
+  animation: bouncy-button 5s infinite linear;
+}
+.btn-color-2:hover {
+  background-color: #ffc945;
+}
+
+@keyframes bouncy-button {
+  0% {
+    top: 0rem;
+  }
+  40% {
+    top: 0rem;
+  }
+  42% {
+    top: -0.9rem; /* Abrupt bounce */
+  }
+  44% {
+    top: 0rem;
+  }
+  46% {
+    top: -0.5rem;
+  }
+  47% {
+    top: 0rem;
+  }
+  100% {
+    top: 0em;
+  }
+}
