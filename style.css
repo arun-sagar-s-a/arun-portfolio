@@ -261,3 +261,53 @@ button {
     top: 0em;
   }
 }
+
+/* ABOUT SECTION */
+.section_container {
+  display: flex;
+  gap: 3rem;
+  height: 80vh;
+  padding: 1rem;
+}
+
+.about-details-container p {
+  color: grey;
+  font-size: 0.85rem;
+}
+
+#about .section__pic-continer {
+  border-radius: 0%;
+}
+#about .section__pic-continer img {
+  border-radius: 10%;
+}
+
+#about {
+  position: relative;
+}
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+.about-containers {
+  gap: 2rem;
+  margin: 2rem;
+}
+.about-details-container {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.arrow {
+  height: 2rem;
+  position: absolute;
+  right: 2.5%;
+  bottom: 2.5%;
+}
+.details-container {
+  padding: 1rem;
+  background-color: whitesmoke;
+  flex: 1;
+  border-radius: 2rem;
+  border: darkgrey 0.1rem solid;
+}
