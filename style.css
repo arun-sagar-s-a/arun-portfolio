@@ -311,3 +311,8 @@ button {
   border-radius: 2rem;
   border: darkgrey 0.1rem solid;
 }
+
+/* EXPERIENCE */
+.common-para-color {
+  color: gray;
+}
