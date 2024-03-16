@@ -328,7 +328,7 @@ button {
 .experience-details-container {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .article-container {
@@ -347,4 +347,27 @@ article {
 
 article .icon {
   cursor: default;
+}
+/* Project Section */
+#project {
+  position: relative;
+}
+
+button {
+  text-align: center;
+}
+.project-title {
+  text-align: center;
+  margin: 1rem;
+}
+.project-img {
+  border-radius: 2rem;
+  width: 80%;
+  height: 80%;
+}
+.project-btn {
+  background-color: black;
+}
+.project-btn p {
+  color: white;
 }
