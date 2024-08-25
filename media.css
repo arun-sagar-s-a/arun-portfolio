@@ -1,96 +1,40 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  .details-container {
-    height: fit-content;
-  }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section_container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section_container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-continer {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 90vh;
+@media screen and (max-width: 768px) {
+  #hamburger-nav .hamburger-icon {
+    height: 1.05rem;
+    width: 1.15rem;
   }
-  #profile {
-    height: 120vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .btn__container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-    font-size: 0.5rem;
-  }
-
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .nav-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.25rem;
-  }
-  .nav-links {
+  #hamburger-nav .menu-links {
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
-  .text-container {
-    text-align: justify;
+  #hamburger-nav .menu-links li a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-container img {
+    height: 18rem;
   }
 }
