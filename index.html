@@ -70,24 +70,26 @@
             <p class="role">Passionate Developer</p>
             <div class="btn-container">
               <button class="btn btn-color-1" onclick="getMyResume()">
-                <p class="btn-text">Download CV</p>
+                <p class="btn-text-1">Download CV</p>
+                <p class="btn-text-2">Great!</p>
               </button>
               <button
                 class="btn btn-color-2"
                 onclick="location.href='#contact'"
               >
-                <p class="btn-text">Contact Me</p>
+                <p class="btn-text-1">Contact Me</p>
+                <p class="btn-text-2">Thank you!</p>
               </button>
             </div>
             <div class="social-links">
               <img
-                src="./assets/linkedin.png"
+                src="./assets/linkedin-svgrepo-com-1-66cde4cf26eb4.webp"
                 alt="LinkedIn Profile"
                 class="icon"
                 onclick="takeMeTolinkedIn()"
               />
               <img
-                src="./assets/github.png"
+                src="./assets/github-svgrepo-com-66cde5d999b03.webp"
                 alt="GitHub Profile"
                 class="icon"
                 onclick="takeMeToGithub()"
@@ -95,11 +97,70 @@
             </div>
           </div>
         </div>
+
+        <img
+          class="arrow"
+          src="./assets/down-arrow-4-svgrepo-com-66cdf039cbbbb.webp"
+          alt="arrow icon"
+          onclick="location.href='./#about'"
+        />
       </section>
 
       <!-- About Section -->
       <section id="about">
-        <!-- Content for about section -->
+        <div class="about-header">
+          <p class="greeting">Get to know more</p>
+          <h2 class="profile-name">About Me</h2>
+        </div>
+        <div class="about-container">
+          <!-- Profile Image -->
+          <div class="about-image">
+            <img
+              src="./assets/about-pic.png"
+              alt="About me picture"
+              class="about-pic"
+            />
+          </div>
+
+          <!-- About Details -->
+          <div class="about-details">
+            <div class="about-stats">
+              <div class="stat-item">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>~2 years<br />Software Engineer @Oracle</p>
+              </div>
+              <div class="stat-item">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.E (Electronics & Communication)<br />CGPA: 9.5</p>
+              </div>
+            </div>
+            <div class="about-description">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Exercitationem assumenda delectus nihil. Possimus molestiae id
+                autem quia velit ex adipisci earum, voluptate officiis
+                praesentium error ut pariatur at, sint distinctio?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Downward Arrow for Navigation -->
+        <img
+          class="arrow"
+          src="./assets/down-arrow-4-svgrepo-com-66cdf039cbbbb.webp"
+          alt="arrow icon"
+          onclick="location.href='#experience'"
+        />
       </section>
 
       <!-- Experience Section -->
