@@ -113,10 +113,18 @@ nav {
 }
 /* Section */
 section {
-  margin: 0 2rem;
+  margin: 3rem 5rem;
   height: fit-content;
 }
+/* All Icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
 /* Profile seciton */
+#profile {
+  position: relative;
+}
 .profile-container {
   padding: 4rem 2rem;
   background-color: #f7f7f7; /* Example background */
@@ -140,7 +148,8 @@ section {
   border-radius: 50%;
 }
 /* Profile Text */
-.profile-text {
+.profile-text,
+.about-header {
   align-self: center;
   text-align: center;
   /* margin-bottom: 2rem; */
@@ -148,7 +157,175 @@ section {
 .profile-text p {
   font-weight: bold;
 }
-.profile-text .greeting {
+.profile-text .greeting,
+.about-header .greeting {
   /* font-size: 1.5rem; */
   color: #555;
+}
+.profile-text .profile-name,
+.about-header .profile-name {
+  font-size: 2rem;
+}
+
+/* Social links */
+.social-links .icon {
+  height: 2rem;
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+/* Buttons */
+
+/* Both social links and buttons have same style*/
+.btn-container,
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.btn {
+  width: 7.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 1.25rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 30px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+  transition: top 0.5s;
+  align-self: center;
+  color: black;
+}
+/* button for cv download */
+.btn-color-1 {
+  background-color: #7aa5e6;
+}
+.btn-text-1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:hover .btn-text-1 {
+  top: -50%;
+}
+
+/* Contact Me */
+.btn-color-2 {
+  background-color: #ffb534;
+
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s linear;
+  animation: bouncy-button 3s infinite 3s;
+}
+.btn-text-2 {
+  position: absolute;
+  top: 150%;
+  transform: translateY(-50%);
+}
+.btn:hover .btn-text-2 {
+  top: 50%;
+}
+
+/* Button animation  */
+@keyframes bouncy-button {
+  0% {
+    top: 0rem;
+  }
+  40% {
+    top: 0rem;
+  }
+  42% {
+    top: -0.9rem; /* Abrupt bounce */
+  }
+  44% {
+    top: 0rem;
+  }
+  46% {
+    top: -0.5rem;
+  }
+  47% {
+    top: 0rem;
+  }
+  100% {
+    top: 0em;
+  }
+}
+/* Arrow for each sectin scroll */
+.arrow {
+  height: 2rem;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+}
+
+/* Abouts Section */
+
+#about {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+/* about-header combined with profile text above */
+#about {
+  position: relative;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  margin: 0 auto;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh;
+  padding: 1rem;
+  text-align: center;
+}
+/* About Image */
+.about-image img {
+  width: 350px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+/* About Details */
+.about-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-details p {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+/* About stats */
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+/* About Stats */
+.stat-item {
+  background-color: whitesmoke;
+  border-radius: 2rem;
+  border: darkgrey 0.1rem solid;
+  flex: 1;
+  padding: 0.5rem;
 }
