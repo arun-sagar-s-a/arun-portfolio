@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
 }
 body {
@@ -90,6 +90,7 @@ nav {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 .menu-links a {
   text-decoration: none;
@@ -328,4 +329,13 @@ section {
   border: darkgrey 0.1rem solid;
   flex: 1;
   padding: 0.5rem;
+}
+/* About Description */
+.about-description {
+  padding: 0.5rem;
+
+  text-align: justify;
+}
+.about-description .about-me-text {
+  color: black;
 }
