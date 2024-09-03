@@ -529,19 +529,23 @@ section {
 
 /* Project Card */
 .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1 1 calc(33% - 20px);
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  justify-content: space-between;
 
 }
 
 .project-image p {
   text-align: justify;
   color: #333;
-  height: 20rem;
+  /* height: 20rem; */
 }
 
 .project-image {
@@ -571,6 +575,9 @@ section {
   color: #fff;
 }
 
+.project-card .btn-container {
+  flex-wrap: wrap;
+}
 
 .arrow:hover {
   transform: translateY(-5px);
