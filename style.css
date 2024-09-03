@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
 }
 
@@ -152,7 +152,8 @@ section {
 
 .profile-container {
   padding: 4rem 2rem;
-  background-color: #f7f7f7;
+  background-color: #fff;
+
   /* Example background */
   display: flex;
   justify-content: center;
@@ -315,13 +316,15 @@ section {
   position: absolute;
   right: 2%;
   bottom: 2%;
+  margin: 4rem auto 0;
+  transition: transform 0.3s ease;
 }
 
 /* Abouts Section */
 
 #about {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 /* about-header combined with profile text above */
@@ -399,7 +402,8 @@ section {
   position: relative;
 }
 
-#experience .section-header {
+#experience .section-header,
+#projects .section-header {
 
   text-align: center;
   margin-bottom: 1rem;
@@ -415,7 +419,7 @@ section {
 
 .experience-category {
   display: flex;
-  /* flex: 1; */
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem;
   padding: 0.5rem;
@@ -441,7 +445,7 @@ section {
 .experience-container {
 
   padding: 1rem 1rem;
-  background-color: #f7f7f7;
+  background-color: #fff;
   /* Example background */
   display: flex;
   justify-content: center;
@@ -474,4 +478,100 @@ section {
   justify-items: center;
   width: 9rem;
 
+}
+
+/* projects */
+#projects {
+  position: relative;
+}
+
+#projects .small {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #4a8e32;
+  text-align: justify;
+}
+
+
+/* General Section Styling */
+#projects {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-tagline {
+  font-size: 18px;
+  color: #777;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  /* height: 90vh; */
+  margin-bottom: 2rem;
+}
+
+/* Project Card */
+.project-card {
+  flex: 1 1 calc(33% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+
+}
+
+.project-image p {
+  text-align: justify;
+  color: #333;
+  height: 20rem;
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #333;
+}
+
+.btn-primary p {
+  color: #fff;
+}
+
+
+.arrow:hover {
+  transform: translateY(-5px);
 }
