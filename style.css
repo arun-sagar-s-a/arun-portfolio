@@ -354,6 +354,10 @@ section {
   margin: auto;
 }
 
+.about-image img {
+  border-radius: 1rem;
+}
+
 /* About Details */
 .about-details {
   flex: 1;
