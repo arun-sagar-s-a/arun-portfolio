@@ -15,5 +15,5 @@ function takeMeTolinkedIn() {
   );
 }
 function getMyResume() {
-  window.open("./assets/Resume-ArunSagarSA.pdf", "_blank");
+  window.open("./assets/Arun_RESUME_StudentTester_R3.pdf", "_blank");
 }
