@@ -1,4 +1,5 @@
-# /assets
+/assets
 /staticToReact
 *.md
 *.backup
+*.json
