@@ -15,5 +15,5 @@ function takeMeTolinkedIn() {
   );
 }
 function getMyResume() {
-  window.open("./assets/Arun_Resume_Algonquin.pdf", "_blank");
+  window.open("./assets/Arun_RESUME.pdf", "_blank");
 }
