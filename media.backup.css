@@ -1,0 +1,119 @@
+@media screen and (max-width:1400px) {
+    #profile {
+        /* height: 83vh; */
+        margin-bottom: 2rem;
+    }
+
+    .about-stats,
+    .skill-category,
+    .project-card,
+    .contact-info {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #experience,
+    .experience-category,
+    .projects-container,
+    .contact-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .profile-container {
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+    section,
+    .profile-container,
+    .about-container,
+    .experience-container,
+    .projects-container,
+    .contact-info-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 3%;
+    }
+
+    .profile-pic-container {
+        height: 275px;
+        width: 275px;
+    }
+
+    #about {
+        padding: 1rem;
+    }
+
+    .about-container {
+        padding: 0;
+
+    }
+
+    .about-image {
+        height: 275px;
+        width: 275px;
+    }
+
+    .about-image img {
+        height: 100%;
+        /* width: 100%; */
+        display: block;
+    }
+
+    .profile-pic-container img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-category {
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .experience-container {
+        margin-bottom: 2rem;
+    }
+
+    #contact {
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        background-color: #fff;
+    }
+
+    .project-card {
+        padding: 0.25rem;
+    }
+
+    .about-stats {
+        margin: .25rem;
+        margin-bottom: 1rem;
+    }
+
+
+}

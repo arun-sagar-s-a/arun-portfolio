@@ -121,4 +121,8 @@
 
   }
 
+  .menu-links li a {
+    font-size: 0.5rem;
+  }
+
 }
